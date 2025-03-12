@@ -30,11 +30,7 @@ namespace Exercices_LesFormes_ConsoleAPP
         // Vérifie si le point est sur l'arc du cercle même.
         public bool Inclus(FormePoint p)
         {
-            if (Centre.Distance(p) == Rayon)
-            {
-                return true;
-            }
-            return false;
+            return Centre.Distance(p) == Rayon;
         }
         public override string ToString()
         {
